@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/defs.h
+
+../include/memlayout.h
+
+../include/riscv.h
+defs.h
+../include/defs.h
+
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/boot/start.c
+defs.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/boot/defs.h
+memlayout.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/boot/memlayout.h
+riscv.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/boot/riscv.h
+

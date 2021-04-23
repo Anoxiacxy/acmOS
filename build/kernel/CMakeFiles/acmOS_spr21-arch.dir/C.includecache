@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/defs.h
+
+../include/riscv.h
+defs.h
+../include/defs.h
+
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/lock.h
+printk.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/printk.h
+defs.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/defs.h
+
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/printk.h
+uart.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/uart.h
+
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/uart.h
+
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/main.c
+defs.h
+-
+riscv.h
+-
+common/lock.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/lock.h
+common/printk.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/printk.h
+common/uart.h
+/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/uart.h
+
