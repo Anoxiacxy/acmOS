@@ -6,5 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/asm/boot.S
+/home/anoxiacxy/Desktop/acmOS/kernel/asm/boot.S
 

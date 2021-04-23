@@ -15,14 +15,14 @@ int lock_init(struct lock *lock){
 
 void acquire(struct lock *lock){
     /* Your code here */
-    while(__sync_lock_test_and_set(&lock->locked, 1));
+    while (try_acquire(lock) == -1);
 }
 
 // Try to acquire the lock once
 // Return 0 if succeed, -1 if failed.
 int try_acquire(struct lock *lock){
     /* Your code here */
-    if (__sync_lock_test_and_set(&lock->locked, 1))
+    if (__sync_lock_test_and_set(&lock->locked, 1) == 0)
         return 0;
     return -1;
 }

@@ -23,7 +23,7 @@ static void printk_write_num(int base, unsigned long long n, int neg) {
     // Remember the most significant digit is printed first.
     // It's easy for you, right?
     const int size = 100;
-    char stack[size], *top = stack + size, *ptr = stack;
+    char stack[size], *top = stack + size;
     *--top = '\0';
     do {
         char digit = n % base;
@@ -36,11 +36,7 @@ static void printk_write_num(int base, unsigned long long n, int neg) {
     } while (n);
     if (neg)
         *--top = '-';
-    *ptr = *top;
-    do {
-        *++ptr = *++top;
-    } while (*top);
-    printk_write_string(stack);
+    printk_write_string(top);
 }
 
 #endif  // ACMOS_SPR21_ANSWER_PRINTK_H

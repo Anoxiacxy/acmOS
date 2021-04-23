@@ -1,4 +1,4 @@
-# Install script for directory: /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/boot
+# Install script for directory: /home/anoxiacxy/Desktop/acmOS/kernel/boot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

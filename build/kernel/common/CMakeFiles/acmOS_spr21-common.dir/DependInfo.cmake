@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/kernelvec.S" "/home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o"
+  "/home/anoxiacxy/Desktop/acmOS/kernel/common/kernelvec.S" "/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -14,10 +14,10 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../include"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/lock.c" "/home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o"
-  "/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/printk.c" "/home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o"
-  "/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/string.c" "/home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o"
-  "/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/uart.c" "/home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o"
+  "/home/anoxiacxy/Desktop/acmOS/kernel/common/lock.c" "/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o"
+  "/home/anoxiacxy/Desktop/acmOS/kernel/common/printk.c" "/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o"
+  "/home/anoxiacxy/Desktop/acmOS/kernel/common/string.c" "/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o"
+  "/home/anoxiacxy/Desktop/acmOS/kernel/common/uart.c" "/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

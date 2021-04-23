@@ -4,7 +4,7 @@
 # compile ASM with riscv64-linux-gnu-gcc
 ASM_DEFINES = 
 
-ASM_INCLUDES = -I/home/anoxiacxy/Desktop/acmOS-riscv-master/include
+ASM_INCLUDES = -I/home/anoxiacxy/Desktop/acmOS/include
 
 ASM_FLAGS = 
 

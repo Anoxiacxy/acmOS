@@ -4,7 +4,7 @@
 kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o
  ../include/defs.h
  ../include/riscv.h
- /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/lock.h
- /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/printk.h
- /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/uart.h
- /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/main.c
+ /home/anoxiacxy/Desktop/acmOS/kernel/common/lock.h
+ /home/anoxiacxy/Desktop/acmOS/kernel/common/printk.h
+ /home/anoxiacxy/Desktop/acmOS/kernel/common/uart.h
+ /home/anoxiacxy/Desktop/acmOS/kernel/main.c

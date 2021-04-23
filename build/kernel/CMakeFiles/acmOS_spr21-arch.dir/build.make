@@ -62,10 +62,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS-riscv-master
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS-riscv-master/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
 
 # Include any dependencies generated for this target.
 include kernel/CMakeFiles/acmOS_spr21-arch.dir/depend.make
@@ -78,16 +78,16 @@ include kernel/CMakeFiles/acmOS_spr21-arch.dir/flags.make
 
 kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o: kernel/CMakeFiles/acmOS_spr21-arch.dir/flags.make
 kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o: ../kernel/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS-riscv-master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o"
-	cd /home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-arch.dir/main.c.o -c /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o"
+	cd /home/anoxiacxy/Desktop/acmOS/build/kernel && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-arch.dir/main.c.o -c /home/anoxiacxy/Desktop/acmOS/kernel/main.c
 
 kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/acmOS_spr21-arch.dir/main.c.i"
-	cd /home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/main.c > CMakeFiles/acmOS_spr21-arch.dir/main.c.i
+	cd /home/anoxiacxy/Desktop/acmOS/build/kernel && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Desktop/acmOS/kernel/main.c > CMakeFiles/acmOS_spr21-arch.dir/main.c.i
 
 kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/acmOS_spr21-arch.dir/main.c.s"
-	cd /home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/main.c -o CMakeFiles/acmOS_spr21-arch.dir/main.c.s
+	cd /home/anoxiacxy/Desktop/acmOS/build/kernel && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Desktop/acmOS/kernel/main.c -o CMakeFiles/acmOS_spr21-arch.dir/main.c.s
 
 acmOS_spr21-arch: kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o
 acmOS_spr21-arch: kernel/CMakeFiles/acmOS_spr21-arch.dir/build.make
@@ -100,10 +100,10 @@ kernel/CMakeFiles/acmOS_spr21-arch.dir/build: acmOS_spr21-arch
 .PHONY : kernel/CMakeFiles/acmOS_spr21-arch.dir/build
 
 kernel/CMakeFiles/acmOS_spr21-arch.dir/clean:
-	cd /home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel && $(CMAKE_COMMAND) -P CMakeFiles/acmOS_spr21-arch.dir/cmake_clean.cmake
+	cd /home/anoxiacxy/Desktop/acmOS/build/kernel && $(CMAKE_COMMAND) -P CMakeFiles/acmOS_spr21-arch.dir/cmake_clean.cmake
 .PHONY : kernel/CMakeFiles/acmOS_spr21-arch.dir/clean
 
 kernel/CMakeFiles/acmOS_spr21-arch.dir/depend:
-	cd /home/anoxiacxy/Desktop/acmOS-riscv-master/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Desktop/acmOS-riscv-master /home/anoxiacxy/Desktop/acmOS-riscv-master/kernel /home/anoxiacxy/Desktop/acmOS-riscv-master/build /home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel /home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel/CMakeFiles/acmOS_spr21-arch.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Desktop/acmOS /home/anoxiacxy/Desktop/acmOS/kernel /home/anoxiacxy/Desktop/acmOS/build /home/anoxiacxy/Desktop/acmOS/build/kernel /home/anoxiacxy/Desktop/acmOS/build/kernel/CMakeFiles/acmOS_spr21-arch.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kernel/CMakeFiles/acmOS_spr21-arch.dir/depend
 

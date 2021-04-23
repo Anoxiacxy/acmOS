@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/main.c" "/home/anoxiacxy/Desktop/acmOS-riscv-master/build/kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o"
+  "/home/anoxiacxy/Desktop/acmOS/kernel/main.c" "/home/anoxiacxy/Desktop/acmOS/build/kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -12,27 +12,27 @@
 defs.h
 ../include/defs.h
 
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/lock.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/lock.h
 printk.h
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/printk.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/printk.h
 defs.h
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/defs.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/defs.h
 
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/printk.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/printk.h
 uart.h
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/uart.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/uart.h
 
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/uart.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/uart.h
 
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/main.c
+/home/anoxiacxy/Desktop/acmOS/kernel/main.c
 defs.h
 -
 riscv.h
 -
 common/lock.h
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/lock.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/lock.h
 common/printk.h
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/printk.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/printk.h
 common/uart.h
-/home/anoxiacxy/Desktop/acmOS-riscv-master/kernel/common/uart.h
+/home/anoxiacxy/Desktop/acmOS/kernel/common/uart.h
 
