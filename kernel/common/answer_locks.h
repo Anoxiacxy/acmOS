@@ -10,6 +10,7 @@ int lock_init(struct lock *lock){
     /* Your code here */
     if(nlock >= MAXLOCKS) BUG("Max lock count reached.");
     locks[nlock++] = lock;
+    lock->cpuid = cpuid();
     return 0;
 }
 
@@ -41,6 +42,10 @@ int is_locked(struct lock* lock){
 // private for spin lock
 int holding_lock(struct lock* lock){
     /* Your code here */
+    if (lock->locked && lock->cpuid == cpuid())
+        return 1;
+    else
+        return 0;
     return -1;
 }
 
