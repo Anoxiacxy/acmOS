@@ -22,6 +22,7 @@ void acquire(struct lock *lock){
 // Return 0 if succeed, -1 if failed.
 int try_acquire(struct lock *lock){
     /* Your code here */
+    // it writes value to *ptr and returns the previous contents of *ptr
     if (__sync_lock_test_and_set(&lock->locked, 1) == 0)
         return 0;
     return -1;
@@ -29,6 +30,7 @@ int try_acquire(struct lock *lock){
 
 void release(struct lock* lock){
     /* Your code here */
+    // it writes 0 to *ptr
     __sync_lock_release(&lock->locked);
 }
 
