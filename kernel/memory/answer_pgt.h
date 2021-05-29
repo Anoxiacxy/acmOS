@@ -53,6 +53,6 @@ int pt_unmap_addrs(pagetable_t pagetable, vaddr_t va){
 
 int pt_map_addrs(pagetable_t pagetable, vaddr_t va, paddr_t pa, int perm){
     pte_t* pte = pt_query(pagetable, va, 1);
-    *pte = PA2PTE(pa) | perm;
+    *pte = PA2PTE(pa) | perm | PTE_V;
     return 0; // Do not modify
 }
