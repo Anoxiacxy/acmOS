@@ -77,6 +77,7 @@ all: kernel/all
 all: kernel/boot/all
 all: kernel/asm/all
 all: kernel/common/all
+all: kernel/memory/all
 
 .PHONY : all
 
@@ -85,6 +86,7 @@ preinstall: kernel/preinstall
 preinstall: kernel/boot/preinstall
 preinstall: kernel/asm/preinstall
 preinstall: kernel/common/preinstall
+preinstall: kernel/memory/preinstall
 
 .PHONY : preinstall
 
@@ -94,6 +96,7 @@ clean: kernel/clean
 clean: kernel/boot/clean
 clean: kernel/asm/clean
 clean: kernel/common/clean
+clean: kernel/memory/clean
 
 .PHONY : clean
 
@@ -170,6 +173,24 @@ kernel/common/clean: kernel/common/CMakeFiles/acmOS_spr21-common.dir/clean
 .PHONY : kernel/common/clean
 
 #=============================================================================
+# Directory level rules for directory kernel/memory
+
+# Recursive "all" directory target.
+kernel/memory/all: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/all
+
+.PHONY : kernel/memory/all
+
+# Recursive "preinstall" directory target.
+kernel/memory/preinstall:
+
+.PHONY : kernel/memory/preinstall
+
+# Recursive "clean" directory target.
+kernel/memory/clean: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/clean
+
+.PHONY : kernel/memory/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/kernel.img.dir
 
 # All Build rule for target.
@@ -177,14 +198,15 @@ CMakeFiles/kernel.img.dir/all: kernel/CMakeFiles/acmOS_spr21-arch.dir/all
 CMakeFiles/kernel.img.dir/all: kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/all
 CMakeFiles/kernel.img.dir/all: kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/all
 CMakeFiles/kernel.img.dir/all: kernel/common/CMakeFiles/acmOS_spr21-common.dir/all
+CMakeFiles/kernel.img.dir/all: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.img.dir/build.make CMakeFiles/kernel.img.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.img.dir/build.make CMakeFiles/kernel.img.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=10 "Built target kernel.img"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=12 "Built target kernel.img"
 .PHONY : CMakeFiles/kernel.img.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/kernel.img.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/kernel.img.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 0
 .PHONY : CMakeFiles/kernel.img.dir/rule
@@ -306,6 +328,33 @@ acmOS_spr21-common: kernel/common/CMakeFiles/acmOS_spr21-common.dir/rule
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/clean:
 	$(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/clean
 .PHONY : kernel/common/CMakeFiles/acmOS_spr21-common.dir/clean
+
+#=============================================================================
+# Target rules for target kernel/memory/CMakeFiles/acmOS_spr21-memory.dir
+
+# All Build rule for target.
+kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/all:
+	$(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/depend
+	$(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=10,11 "Built target acmOS_spr21-memory"
+.PHONY : kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/all
+
+# Build rule for subdir invocation for target.
+kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 0
+.PHONY : kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/rule
+
+# Convenience name for target.
+acmOS_spr21-memory: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/rule
+
+.PHONY : acmOS_spr21-memory
+
+# clean rule for target.
+kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/clean:
+	$(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/clean
+.PHONY : kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

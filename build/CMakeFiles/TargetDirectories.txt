@@ -13,3 +13,6 @@
 /home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/rebuild_cache.dir
 /home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/edit_cache.dir
 /home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir
+/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/rebuild_cache.dir
+/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/edit_cache.dir
+/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir

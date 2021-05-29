@@ -8,6 +8,10 @@
 
 ../include/defs.h
 
+../include/list.h
+defs.h
+../include/defs.h
+
 ../include/riscv.h
 defs.h
 ../include/defs.h
@@ -35,4 +39,12 @@ common/printk.h
 /home/anoxiacxy/Desktop/acmOS/kernel/common/printk.h
 common/uart.h
 /home/anoxiacxy/Desktop/acmOS/kernel/common/uart.h
+memory/mm.h
+/home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.h
+
+/home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.h
+defs.h
+/home/anoxiacxy/Desktop/acmOS/kernel/memory/defs.h
+list.h
+/home/anoxiacxy/Desktop/acmOS/kernel/memory/list.h
 

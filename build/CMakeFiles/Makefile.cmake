@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../kernel/asm/CMakeLists.txt"
   "../kernel/boot/CMakeLists.txt"
   "../kernel/common/CMakeLists.txt"
+  "../kernel/memory/CMakeLists.txt"
   "/share/cmake-3.19/Modules/CMakeASMCompiler.cmake.in"
   "/share/cmake-3.19/Modules/CMakeASMInformation.cmake"
   "/share/cmake-3.19/Modules/CMakeCCompiler.cmake.in"
@@ -104,6 +105,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "kernel/boot/CMakeFiles/CMakeDirectoryInformation.cmake"
   "kernel/asm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "kernel/common/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "kernel/memory/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -113,4 +115,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/DependInfo.cmake"
   "kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/DependInfo.cmake"
   "kernel/common/CMakeFiles/acmOS_spr21-common.dir/DependInfo.cmake"
+  "kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/DependInfo.cmake"
   )

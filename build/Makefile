@@ -194,6 +194,19 @@ acmOS_spr21-common/fast:
 	$(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/build
 .PHONY : acmOS_spr21-common/fast
 
+#=============================================================================
+# Target rules for targets named acmOS_spr21-memory
+
+# Build rule for target.
+acmOS_spr21-memory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 acmOS_spr21-memory
+.PHONY : acmOS_spr21-memory
+
+# fast build rule for target.
+acmOS_spr21-memory/fast:
+	$(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build
+.PHONY : acmOS_spr21-memory/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,6 +219,7 @@ help:
 	@echo "... acmOS_spr21-asm"
 	@echo "... acmOS_spr21-boot"
 	@echo "... acmOS_spr21-common"
+	@echo "... acmOS_spr21-memory"
 	@echo "... kernel.img"
 .PHONY : help
 

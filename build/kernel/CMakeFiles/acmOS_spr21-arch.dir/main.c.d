@@ -7,4 +7,6 @@ CMakeFiles/acmOS_spr21-arch.dir/main.c.o: \
  /home/anoxiacxy/Desktop/acmOS/kernel/common/printk.h \
  /home/anoxiacxy/Desktop/acmOS/kernel/common/uart.h \
  /home/anoxiacxy/Desktop/acmOS/kernel/common/printk.h \
- /home/anoxiacxy/Desktop/acmOS/kernel/common/uart.h
+ /home/anoxiacxy/Desktop/acmOS/kernel/common/uart.h \
+ /home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.h \
+ /home/anoxiacxy/Desktop/acmOS/include/list.h

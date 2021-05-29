@@ -89,7 +89,9 @@ kernel_img_EXTERNAL_OBJECTS = \
 "/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o" \
 "/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o" \
 "/home/anoxiacxy/Desktop/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o"
+"/home/anoxiacxy/Desktop/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o" \
+"/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o" \
+"/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o"
 
 kernel.img: kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o
 kernel.img: kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o
@@ -100,6 +102,8 @@ kernel.img: kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o
 kernel.img: kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o
 kernel.img: kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o
 kernel.img: kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o
+kernel.img: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o
+kernel.img: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o
 kernel.img: CMakeFiles/kernel.img.dir/build.make
 kernel.img: CMakeFiles/kernel.img.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C executable kernel.img"
