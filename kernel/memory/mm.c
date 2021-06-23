@@ -15,7 +15,7 @@ static uint64 kernel_page_available[INIT_MAX_PAGES] = {0};
 void kern_page_init() {
     allocated_page = 0;
     for (int i = 0; i < INIT_MAX_PAGES; ++i)
-        kernel_page_available[i] = (uint64)(&kernel_page_initialized[i * BUDDY_PAGE_SIZE]);
+        kernel_page_available[i] = (uint64)(&kernel_page_initialized[i]);
 }
 
 void kern_page_test() {
@@ -91,11 +91,9 @@ void mm_init() {
         bd_meta.allocate, bd_meta.free);
     for (i = 0; i < bd_max_entries; ++i) {
         page_t* meta_page = (page_t*)(bd_meta.meta_head + i * sizeof(page_t));
-        //DEBUG("i = %d, page = %lx\n", i, meta_page);
         init_list_head(&meta_page->list_node);
         meta_page->addr = bd_meta.data_head + i * BD_LEAF_SIZE;
         buddy_free_page(meta_page);
-        //DEBUG("i = %d, total = %d\n", i, bd_max_entries);
     }
     uint64 page_equ_entries = 0;
     for (i = 0; i < bd_max_size; ++i) page_equ_entries += (bd_lists[i].nr_free * (1 << i));
