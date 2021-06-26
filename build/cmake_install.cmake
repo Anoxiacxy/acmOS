@@ -1,4 +1,4 @@
-# Install script for directory: /home/anoxiacxy/Desktop/acmOS
+# Install script for directory: /home/anoxiacxy/Documents/acmOS
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,27 +44,32 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anoxiacxy/Desktop/acmOS/build/kernel/cmake_install.cmake")
+  include("/home/anoxiacxy/Documents/acmOS/build/kernel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anoxiacxy/Desktop/acmOS/build/kernel/boot/cmake_install.cmake")
+  include("/home/anoxiacxy/Documents/acmOS/build/kernel/boot/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anoxiacxy/Desktop/acmOS/build/kernel/asm/cmake_install.cmake")
+  include("/home/anoxiacxy/Documents/acmOS/build/kernel/asm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anoxiacxy/Desktop/acmOS/build/kernel/common/cmake_install.cmake")
+  include("/home/anoxiacxy/Documents/acmOS/build/kernel/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/cmake_install.cmake")
+  include("/home/anoxiacxy/Documents/acmOS/build/kernel/memory/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anoxiacxy/Documents/acmOS/build/kernel/process/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -75,5 +80,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/anoxiacxy/Desktop/acmOS/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anoxiacxy/Documents/acmOS/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -5,6 +5,11 @@
 #ifndef ACMOS_SPR21_DEFS_H
 #define ACMOS_SPR21_DEFS_H
 
+struct context;
+struct process;
+struct thread;
+struct cpu;
+
 // Type Definitions
 typedef unsigned int uint;
 typedef unsigned short ushort;
@@ -34,6 +39,7 @@ typedef char bool;
 #define NULL 0
 // some constants: defined in params.h
 #define NPROC 10  // maximum number of processes
+#define NTHRE 64  // maximum number of threads
 #define NCPU 8  // maximum number of CPUs
 #define NOFILE 16  // open files per process
 #define NFILE 100  // open files per system
@@ -176,5 +182,21 @@ struct list {
     struct list *next;
     struct list *prev;
 };
+
+// swtch.S
+void swtch(struct context*, struct context*);
+
+// trap.c
+
+void syscall();
+void trap_init_vec();
+void usertrapret();
+void usertrap(void);
+void usertrapret();
+
+void push_off();
+void pop_off();
+
+
 
 #endif  // ACMOS_SPR21_DEFS_H

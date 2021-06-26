@@ -62,10 +62,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Documents/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Documents/acmOS/build
 
 # Include any dependencies generated for this target.
 include kernel/common/CMakeFiles/acmOS_spr21-common.dir/depend.make
@@ -78,60 +78,60 @@ include kernel/common/CMakeFiles/acmOS_spr21-common.dir/flags.make
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o: kernel/common/CMakeFiles/acmOS_spr21-common.dir/flags.make
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o: ../kernel/common/lock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/lock.c.o -c /home/anoxiacxy/Desktop/acmOS/kernel/common/lock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o"
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/lock.c.o -c /home/anoxiacxy/Documents/acmOS/kernel/common/lock.c
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/acmOS_spr21-common.dir/lock.c.i"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Desktop/acmOS/kernel/common/lock.c > CMakeFiles/acmOS_spr21-common.dir/lock.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Documents/acmOS/kernel/common/lock.c > CMakeFiles/acmOS_spr21-common.dir/lock.c.i
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/acmOS_spr21-common.dir/lock.c.s"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Desktop/acmOS/kernel/common/lock.c -o CMakeFiles/acmOS_spr21-common.dir/lock.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Documents/acmOS/kernel/common/lock.c -o CMakeFiles/acmOS_spr21-common.dir/lock.c.s
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o: kernel/common/CMakeFiles/acmOS_spr21-common.dir/flags.make
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o: ../kernel/common/printk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/printk.c.o -c /home/anoxiacxy/Desktop/acmOS/kernel/common/printk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o"
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/printk.c.o -c /home/anoxiacxy/Documents/acmOS/kernel/common/printk.c
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/acmOS_spr21-common.dir/printk.c.i"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Desktop/acmOS/kernel/common/printk.c > CMakeFiles/acmOS_spr21-common.dir/printk.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Documents/acmOS/kernel/common/printk.c > CMakeFiles/acmOS_spr21-common.dir/printk.c.i
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/acmOS_spr21-common.dir/printk.c.s"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Desktop/acmOS/kernel/common/printk.c -o CMakeFiles/acmOS_spr21-common.dir/printk.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Documents/acmOS/kernel/common/printk.c -o CMakeFiles/acmOS_spr21-common.dir/printk.c.s
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o: kernel/common/CMakeFiles/acmOS_spr21-common.dir/flags.make
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o: ../kernel/common/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/uart.c.o -c /home/anoxiacxy/Desktop/acmOS/kernel/common/uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o"
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/uart.c.o -c /home/anoxiacxy/Documents/acmOS/kernel/common/uart.c
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/acmOS_spr21-common.dir/uart.c.i"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Desktop/acmOS/kernel/common/uart.c > CMakeFiles/acmOS_spr21-common.dir/uart.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Documents/acmOS/kernel/common/uart.c > CMakeFiles/acmOS_spr21-common.dir/uart.c.i
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/acmOS_spr21-common.dir/uart.c.s"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Desktop/acmOS/kernel/common/uart.c -o CMakeFiles/acmOS_spr21-common.dir/uart.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Documents/acmOS/kernel/common/uart.c -o CMakeFiles/acmOS_spr21-common.dir/uart.c.s
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o: kernel/common/CMakeFiles/acmOS_spr21-common.dir/flags.make
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o: ../kernel/common/kernelvec.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building ASM object kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o -c /home/anoxiacxy/Desktop/acmOS/kernel/common/kernelvec.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building ASM object kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o"
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o -c /home/anoxiacxy/Documents/acmOS/kernel/common/kernelvec.S
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o: kernel/common/CMakeFiles/acmOS_spr21-common.dir/flags.make
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o: ../kernel/common/string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/string.c.o -c /home/anoxiacxy/Desktop/acmOS/kernel/common/string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o"
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-common.dir/string.c.o -c /home/anoxiacxy/Documents/acmOS/kernel/common/string.c
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/acmOS_spr21-common.dir/string.c.i"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Desktop/acmOS/kernel/common/string.c > CMakeFiles/acmOS_spr21-common.dir/string.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Documents/acmOS/kernel/common/string.c > CMakeFiles/acmOS_spr21-common.dir/string.c.i
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/acmOS_spr21-common.dir/string.c.s"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Desktop/acmOS/kernel/common/string.c -o CMakeFiles/acmOS_spr21-common.dir/string.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Documents/acmOS/kernel/common/string.c -o CMakeFiles/acmOS_spr21-common.dir/string.c.s
 
 acmOS_spr21-common: kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o
 acmOS_spr21-common: kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o
@@ -148,10 +148,10 @@ kernel/common/CMakeFiles/acmOS_spr21-common.dir/build: acmOS_spr21-common
 .PHONY : kernel/common/CMakeFiles/acmOS_spr21-common.dir/build
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/clean:
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/common && $(CMAKE_COMMAND) -P CMakeFiles/acmOS_spr21-common.dir/cmake_clean.cmake
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/common && $(CMAKE_COMMAND) -P CMakeFiles/acmOS_spr21-common.dir/cmake_clean.cmake
 .PHONY : kernel/common/CMakeFiles/acmOS_spr21-common.dir/clean
 
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/depend:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Desktop/acmOS /home/anoxiacxy/Desktop/acmOS/kernel/common /home/anoxiacxy/Desktop/acmOS/build /home/anoxiacxy/Desktop/acmOS/build/kernel/common /home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Documents/acmOS /home/anoxiacxy/Documents/acmOS/kernel/common /home/anoxiacxy/Documents/acmOS/build /home/anoxiacxy/Documents/acmOS/build/kernel/common /home/anoxiacxy/Documents/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kernel/common/CMakeFiles/acmOS_spr21-common.dir/depend
 

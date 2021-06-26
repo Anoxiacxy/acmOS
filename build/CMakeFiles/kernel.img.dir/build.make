@@ -62,10 +62,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Documents/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Documents/acmOS/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/kernel.img.dir/depend.make
@@ -81,20 +81,27 @@ kernel_img_OBJECTS =
 
 # External object files for target kernel.img
 kernel_img_EXTERNAL_OBJECTS = \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o" \
-"/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o"
+"/home/anoxiacxy/Documents/acmOS/build/kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/CMakeFiles/acmOS_spr21-arch.dir/binary_include.S.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/process/CMakeFiles/acmOS_spr21-proc.dir/process.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/process/CMakeFiles/acmOS_spr21-proc.dir/trap.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/process/CMakeFiles/acmOS_spr21-proc.dir/elf.c.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/process/CMakeFiles/acmOS_spr21-proc.dir/swtch.S.o" \
+"/home/anoxiacxy/Documents/acmOS/build/kernel/process/CMakeFiles/acmOS_spr21-proc.dir/tramp.S.o"
 
 kernel.img: kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o
 kernel.img: kernel/CMakeFiles/acmOS_spr21-arch.dir/main.c.o
+kernel.img: kernel/CMakeFiles/acmOS_spr21-arch.dir/binary_include.S.o
 kernel.img: kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o
 kernel.img: kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o
 kernel.img: kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o
@@ -104,9 +111,14 @@ kernel.img: kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o
 kernel.img: kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o
 kernel.img: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o
 kernel.img: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o
+kernel.img: kernel/process/CMakeFiles/acmOS_spr21-proc.dir/process.c.o
+kernel.img: kernel/process/CMakeFiles/acmOS_spr21-proc.dir/trap.c.o
+kernel.img: kernel/process/CMakeFiles/acmOS_spr21-proc.dir/elf.c.o
+kernel.img: kernel/process/CMakeFiles/acmOS_spr21-proc.dir/swtch.S.o
+kernel.img: kernel/process/CMakeFiles/acmOS_spr21-proc.dir/tramp.S.o
 kernel.img: CMakeFiles/kernel.img.dir/build.make
 kernel.img: CMakeFiles/kernel.img.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C executable kernel.img"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C executable kernel.img"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kernel.img.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -119,6 +131,6 @@ CMakeFiles/kernel.img.dir/clean:
 .PHONY : CMakeFiles/kernel.img.dir/clean
 
 CMakeFiles/kernel.img.dir/depend:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Desktop/acmOS /home/anoxiacxy/Desktop/acmOS /home/anoxiacxy/Desktop/acmOS/build /home/anoxiacxy/Desktop/acmOS/build /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles/kernel.img.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Documents/acmOS /home/anoxiacxy/Documents/acmOS /home/anoxiacxy/Documents/acmOS/build /home/anoxiacxy/Documents/acmOS/build /home/anoxiacxy/Documents/acmOS/build/CMakeFiles/kernel.img.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/kernel.img.dir/depend
 

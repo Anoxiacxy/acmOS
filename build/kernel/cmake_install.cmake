@@ -1,4 +1,4 @@
-# Install script for directory: /home/anoxiacxy/Desktop/acmOS/kernel
+# Install script for directory: /home/anoxiacxy/Documents/acmOS/kernel
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.c" "/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o"
-  "/home/anoxiacxy/Desktop/acmOS/kernel/memory/pagetable.c" "/home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o"
+  "/home/anoxiacxy/Documents/acmOS/kernel/memory/mm.c" "/home/anoxiacxy/Documents/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o"
+  "/home/anoxiacxy/Documents/acmOS/kernel/memory/pagetable.c" "/home/anoxiacxy/Documents/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

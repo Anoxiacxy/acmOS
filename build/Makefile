@@ -67,10 +67,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Documents/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Documents/acmOS/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles /home/anoxiacxy/Desktop/acmOS/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Documents/acmOS/build/CMakeFiles /home/anoxiacxy/Documents/acmOS/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Documents/acmOS/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -207,6 +207,19 @@ acmOS_spr21-memory/fast:
 	$(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build
 .PHONY : acmOS_spr21-memory/fast
 
+#=============================================================================
+# Target rules for targets named acmOS_spr21-proc
+
+# Build rule for target.
+acmOS_spr21-proc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 acmOS_spr21-proc
+.PHONY : acmOS_spr21-proc
+
+# fast build rule for target.
+acmOS_spr21-proc/fast:
+	$(MAKE) $(MAKESILENT) -f kernel/process/CMakeFiles/acmOS_spr21-proc.dir/build.make kernel/process/CMakeFiles/acmOS_spr21-proc.dir/build
+.PHONY : acmOS_spr21-proc/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,6 +233,7 @@ help:
 	@echo "... acmOS_spr21-boot"
 	@echo "... acmOS_spr21-common"
 	@echo "... acmOS_spr21-memory"
+	@echo "... acmOS_spr21-proc"
 	@echo "... kernel.img"
 .PHONY : help
 

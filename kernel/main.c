@@ -27,11 +27,13 @@ void main(){
         kern_page_init();
         kern_page_test();
         mm_init();
+        DEBUG("\n");
         pt_init();
+        DEBUG("\n");
         trap_init_vec();
         sched_init();
         proc_init();
-        
+        DEBUG("\n");
         sync_synchronize();
         started = 1;
     } else {

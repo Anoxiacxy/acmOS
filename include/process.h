@@ -4,9 +4,82 @@
 
 #ifndef ACMOS_SPR21_PROCESS_H
 #define ACMOS_SPR21_PROCESS_H
-
+ 
 #include <list.h>
 #include <pagetable.h>
+#include "lock.h"
+
+struct cpu*      mycpu(void);
+struct thread* mythread(void);
+void yield(void);
+void exit(int status);
+
+// Saved registers for kernel context switches.
+struct context {
+    uint64 ra;
+    uint64 sp;
+
+    // callee-saved
+    uint64 s0;
+    uint64 s1;
+    uint64 s2;
+    uint64 s3;
+    uint64 s4;
+    uint64 s5;
+    uint64 s6;
+    uint64 s7;
+    uint64 s8;
+    uint64 s9;
+    uint64 s10;
+    uint64 s11;
+};
+
+// Per-CPU state.
+struct cpu {
+    struct thread *thread;      // The thread running on this cpu, or null.
+    struct context context;     // swtch() here to enter scheduler().
+    int noff;                   // Depth of push_off() nesting.
+    int intena;                 // Were interrupts enabled before push_off()?
+};
+
+struct trapframe {
+    /*   0 */ uint64 kernel_satp;   // kernel page table
+    /*   8 */ uint64 kernel_sp;     // top of process's kernel stack
+    /*  16 */ uint64 kernel_trap;   // usertrap()
+    /*  24 */ uint64 epc;           // saved user program counter
+    /*  32 */ uint64 kernel_hartid; // saved kernel tp
+    /*  40 */ uint64 ra;
+    /*  48 */ uint64 sp;
+    /*  56 */ uint64 gp;
+    /*  64 */ uint64 tp;
+    /*  72 */ uint64 t0;
+    /*  80 */ uint64 t1;
+    /*  88 */ uint64 t2;
+    /*  96 */ uint64 s0;
+    /* 104 */ uint64 s1;
+    /* 112 */ uint64 a0;
+    /* 120 */ uint64 a1;
+    /* 128 */ uint64 a2;
+    /* 136 */ uint64 a3;
+    /* 144 */ uint64 a4;
+    /* 152 */ uint64 a5;
+    /* 160 */ uint64 a6;
+    /* 168 */ uint64 a7;
+    /* 176 */ uint64 s2;
+    /* 184 */ uint64 s3;
+    /* 192 */ uint64 s4;
+    /* 200 */ uint64 s5;
+    /* 208 */ uint64 s6;
+    /* 216 */ uint64 s7;
+    /* 224 */ uint64 s8;
+    /* 232 */ uint64 s9;
+    /* 240 */ uint64 s10;
+    /* 248 */ uint64 s11;
+    /* 256 */ uint64 t3;
+    /* 264 */ uint64 t4;
+    /* 272 */ uint64 t5;
+    /* 280 */ uint64 t6;
+};
 
 typedef enum state { UNUSED, SLEEPING, RUNNABLE, RUNNING, ZOMBIE, IDLE } process_state_t;
 typedef enum file_type{PUTC} file_type_t;
@@ -15,7 +88,17 @@ typedef struct process {
     struct list_head thread_list;
     process_state_t process_state;
     // 以下部分请根据自己的需要自行填充
+       
+    struct lock lock;
+    int pid;
+    int killed;
+    int xstate;
 
+    struct process *parent;
+
+    uint64 sz;
+    pagetable_t pagetable;
+    char name[16];
 } process_t;
 
 // 状态可以根据自己的需要进行修改
@@ -26,7 +109,17 @@ typedef struct thread {
     thread_state_t thread_state;
     struct list_head sched_list_thread_node;
     // 以下部分请根据自己的需要自行填充
+    struct process *process;
 
+    struct lock lock;
+    int tid;
+    int killed;
+    int xstate;
+
+    uint64 kstack;
+    struct trapframe *trapframe;
+    struct context context;
+    char name[16];
 } thread_t;
 
 process_t *alloc_proc(const char* bin, thread_t *thr);

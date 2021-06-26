@@ -67,10 +67,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Documents/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Documents/acmOS/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles /home/anoxiacxy/Desktop/acmOS/build/kernel/boot//CMakeFiles/progress.marks
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 0
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Documents/acmOS/build/CMakeFiles /home/anoxiacxy/Documents/acmOS/build/kernel/boot//CMakeFiles/progress.marks
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Documents/acmOS/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/clean
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/preinstall
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/preinstall
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/rule:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/rule
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/rule
 .PHONY : kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/rule
 
 # Convenience name for target.
@@ -141,7 +141,7 @@ acmOS_spr21-boot: kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/rule
 
 # fast build rule for target.
 acmOS_spr21-boot/fast:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build
 .PHONY : acmOS_spr21-boot/fast
 
 kernelvec.o: kernelvec.S.o
@@ -150,7 +150,7 @@ kernelvec.o: kernelvec.S.o
 
 # target to build an object file
 kernelvec.S.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o
 .PHONY : kernelvec.S.o
 
 start.o: start.c.o
@@ -159,7 +159,7 @@ start.o: start.c.o
 
 # target to build an object file
 start.c.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o
 .PHONY : start.c.o
 
 start.i: start.c.i
@@ -168,7 +168,7 @@ start.i: start.c.i
 
 # target to preprocess a source file
 start.c.i:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.i
 .PHONY : start.c.i
 
 start.s: start.c.s
@@ -177,7 +177,7 @@ start.s: start.c.s
 
 # target to generate assembly for a file
 start.c.s:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/build.make kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.s
 .PHONY : start.c.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anoxiacxy/Documents/acmOS/kernel/process/swtch.S
+
+/home/anoxiacxy/Documents/acmOS/kernel/process/tramp.S
+

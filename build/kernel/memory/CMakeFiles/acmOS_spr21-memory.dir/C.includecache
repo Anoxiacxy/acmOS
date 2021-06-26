@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/buddy.h
+riscv.h
+../include/riscv.h
+list.h
+../include/list.h
+
 ../include/defs.h
 
 ../include/list.h
@@ -14,57 +20,51 @@ defs.h
 
 ../include/memlayout.h
 
+../include/mm.h
+defs.h
+../include/defs.h
+list.h
+../include/list.h
+
+../include/pagetable.h
+riscv.h
+-
+mm.h
+../include/mm.h
+
 ../include/riscv.h
 defs.h
 ../include/defs.h
 
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/answer_buddy.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/answer_buddy.h
 
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/answer_mm.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/answer_mm.h
 
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/answer_pgt.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/answer_pgt.h
 
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/buddy.h
-riscv.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/riscv.h
-list.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/list.h
-
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.c
+/home/anoxiacxy/Documents/acmOS/kernel/memory/mm.c
 mm.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/mm.h
 buddy.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/buddy.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/buddy.h
 memlayout.h
 -
 defs.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/defs.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/defs.h
 riscv.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/riscv.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/riscv.h
 answer_buddy.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/answer_buddy.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/answer_buddy.h
 answer_mm.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/answer_mm.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/answer_mm.h
 
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.h
-defs.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/defs.h
-list.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/list.h
-
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/pagetable.c
+/home/anoxiacxy/Documents/acmOS/kernel/memory/pagetable.c
 pagetable.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/pagetable.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/pagetable.h
 memlayout.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/memlayout.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/memlayout.h
 riscv.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/riscv.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/riscv.h
 answer_pgt.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/answer_pgt.h
-
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/pagetable.h
-riscv.h
--
-mm.h
-/home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.h
+/home/anoxiacxy/Documents/acmOS/kernel/memory/answer_pgt.h
 

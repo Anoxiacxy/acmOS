@@ -14,11 +14,11 @@
 defs.h
 ../include/defs.h
 
-/home/anoxiacxy/Desktop/acmOS/kernel/boot/start.c
+/home/anoxiacxy/Documents/acmOS/kernel/boot/start.c
 defs.h
-/home/anoxiacxy/Desktop/acmOS/kernel/boot/defs.h
+/home/anoxiacxy/Documents/acmOS/kernel/boot/defs.h
 memlayout.h
-/home/anoxiacxy/Desktop/acmOS/kernel/boot/memlayout.h
+/home/anoxiacxy/Documents/acmOS/kernel/boot/memlayout.h
 riscv.h
-/home/anoxiacxy/Desktop/acmOS/kernel/boot/riscv.h
+/home/anoxiacxy/Documents/acmOS/kernel/boot/riscv.h
 

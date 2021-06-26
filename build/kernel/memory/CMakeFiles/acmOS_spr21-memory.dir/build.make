@@ -62,10 +62,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Documents/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Documents/acmOS/build
 
 # Include any dependencies generated for this target.
 include kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/depend.make
@@ -78,29 +78,29 @@ include kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/flags.make
 
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/flags.make
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o: ../kernel/memory/mm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-memory.dir/mm.c.o -c /home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o"
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-memory.dir/mm.c.o -c /home/anoxiacxy/Documents/acmOS/kernel/memory/mm.c
 
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/acmOS_spr21-memory.dir/mm.c.i"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.c > CMakeFiles/acmOS_spr21-memory.dir/mm.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Documents/acmOS/kernel/memory/mm.c > CMakeFiles/acmOS_spr21-memory.dir/mm.c.i
 
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/acmOS_spr21-memory.dir/mm.c.s"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Desktop/acmOS/kernel/memory/mm.c -o CMakeFiles/acmOS_spr21-memory.dir/mm.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Documents/acmOS/kernel/memory/mm.c -o CMakeFiles/acmOS_spr21-memory.dir/mm.c.s
 
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/flags.make
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o: ../kernel/memory/pagetable.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o -c /home/anoxiacxy/Desktop/acmOS/kernel/memory/pagetable.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o"
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o -c /home/anoxiacxy/Documents/acmOS/kernel/memory/pagetable.c
 
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.i"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Desktop/acmOS/kernel/memory/pagetable.c > CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anoxiacxy/Documents/acmOS/kernel/memory/pagetable.c > CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.i
 
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.s"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Desktop/acmOS/kernel/memory/pagetable.c -o CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/memory && riscv64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anoxiacxy/Documents/acmOS/kernel/memory/pagetable.c -o CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.s
 
 acmOS_spr21-memory: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o
 acmOS_spr21-memory: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o
@@ -114,10 +114,10 @@ kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build: acmOS_spr21-memory
 .PHONY : kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build
 
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/clean:
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/memory && $(CMAKE_COMMAND) -P CMakeFiles/acmOS_spr21-memory.dir/cmake_clean.cmake
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/memory && $(CMAKE_COMMAND) -P CMakeFiles/acmOS_spr21-memory.dir/cmake_clean.cmake
 .PHONY : kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/clean
 
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/depend:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Desktop/acmOS /home/anoxiacxy/Desktop/acmOS/kernel/memory /home/anoxiacxy/Desktop/acmOS/build /home/anoxiacxy/Desktop/acmOS/build/kernel/memory /home/anoxiacxy/Desktop/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Documents/acmOS /home/anoxiacxy/Documents/acmOS/kernel/memory /home/anoxiacxy/Documents/acmOS/build /home/anoxiacxy/Documents/acmOS/build/kernel/memory /home/anoxiacxy/Documents/acmOS/build/kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/depend
 

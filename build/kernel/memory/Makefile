@@ -67,10 +67,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Documents/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Documents/acmOS/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles /home/anoxiacxy/Desktop/acmOS/build/kernel/memory//CMakeFiles/progress.marks
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 0
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Documents/acmOS/build/CMakeFiles /home/anoxiacxy/Documents/acmOS/build/kernel/memory//CMakeFiles/progress.marks
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Documents/acmOS/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/clean
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/preinstall
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/preinstall
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/rule:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/rule
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/rule
 .PHONY : kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/rule
 
 # Convenience name for target.
@@ -141,7 +141,7 @@ acmOS_spr21-memory: kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/rule
 
 # fast build rule for target.
 acmOS_spr21-memory/fast:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build
 .PHONY : acmOS_spr21-memory/fast
 
 mm.o: mm.c.o
@@ -150,7 +150,7 @@ mm.o: mm.c.o
 
 # target to build an object file
 mm.c.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.o
 .PHONY : mm.c.o
 
 mm.i: mm.c.i
@@ -159,7 +159,7 @@ mm.i: mm.c.i
 
 # target to preprocess a source file
 mm.c.i:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.i
 .PHONY : mm.c.i
 
 mm.s: mm.c.s
@@ -168,7 +168,7 @@ mm.s: mm.c.s
 
 # target to generate assembly for a file
 mm.c.s:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/mm.c.s
 .PHONY : mm.c.s
 
 pagetable.o: pagetable.c.o
@@ -177,7 +177,7 @@ pagetable.o: pagetable.c.o
 
 # target to build an object file
 pagetable.c.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.o
 .PHONY : pagetable.c.o
 
 pagetable.i: pagetable.c.i
@@ -186,7 +186,7 @@ pagetable.i: pagetable.c.i
 
 # target to preprocess a source file
 pagetable.c.i:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.i
 .PHONY : pagetable.c.i
 
 pagetable.s: pagetable.c.s
@@ -195,7 +195,7 @@ pagetable.s: pagetable.c.s
 
 # target to generate assembly for a file
 pagetable.c.s:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/build.make kernel/memory/CMakeFiles/acmOS_spr21-memory.dir/pagetable.c.s
 .PHONY : pagetable.c.s
 
 # Help Target
@@ -224,6 +224,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

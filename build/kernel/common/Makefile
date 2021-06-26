@@ -67,10 +67,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Documents/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Documents/acmOS/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles /home/anoxiacxy/Desktop/acmOS/build/kernel/common//CMakeFiles/progress.marks
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Desktop/acmOS/build/CMakeFiles 0
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Documents/acmOS/build/CMakeFiles /home/anoxiacxy/Documents/acmOS/build/kernel/common//CMakeFiles/progress.marks
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anoxiacxy/Documents/acmOS/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/clean
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/preinstall
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/preinstall
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 kernel/common/CMakeFiles/acmOS_spr21-common.dir/rule:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/CMakeFiles/acmOS_spr21-common.dir/rule
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/common/CMakeFiles/acmOS_spr21-common.dir/rule
 .PHONY : kernel/common/CMakeFiles/acmOS_spr21-common.dir/rule
 
 # Convenience name for target.
@@ -141,7 +141,7 @@ acmOS_spr21-common: kernel/common/CMakeFiles/acmOS_spr21-common.dir/rule
 
 # fast build rule for target.
 acmOS_spr21-common/fast:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/build
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/build
 .PHONY : acmOS_spr21-common/fast
 
 kernelvec.o: kernelvec.S.o
@@ -150,7 +150,7 @@ kernelvec.o: kernelvec.S.o
 
 # target to build an object file
 kernelvec.S.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/kernelvec.S.o
 .PHONY : kernelvec.S.o
 
 lock.o: lock.c.o
@@ -159,7 +159,7 @@ lock.o: lock.c.o
 
 # target to build an object file
 lock.c.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.o
 .PHONY : lock.c.o
 
 lock.i: lock.c.i
@@ -168,7 +168,7 @@ lock.i: lock.c.i
 
 # target to preprocess a source file
 lock.c.i:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.i
 .PHONY : lock.c.i
 
 lock.s: lock.c.s
@@ -177,7 +177,7 @@ lock.s: lock.c.s
 
 # target to generate assembly for a file
 lock.c.s:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/lock.c.s
 .PHONY : lock.c.s
 
 printk.o: printk.c.o
@@ -186,7 +186,7 @@ printk.o: printk.c.o
 
 # target to build an object file
 printk.c.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.o
 .PHONY : printk.c.o
 
 printk.i: printk.c.i
@@ -195,7 +195,7 @@ printk.i: printk.c.i
 
 # target to preprocess a source file
 printk.c.i:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.i
 .PHONY : printk.c.i
 
 printk.s: printk.c.s
@@ -204,7 +204,7 @@ printk.s: printk.c.s
 
 # target to generate assembly for a file
 printk.c.s:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/printk.c.s
 .PHONY : printk.c.s
 
 string.o: string.c.o
@@ -213,7 +213,7 @@ string.o: string.c.o
 
 # target to build an object file
 string.c.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.o
 .PHONY : string.c.o
 
 string.i: string.c.i
@@ -222,7 +222,7 @@ string.i: string.c.i
 
 # target to preprocess a source file
 string.c.i:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.i
 .PHONY : string.c.i
 
 string.s: string.c.s
@@ -231,7 +231,7 @@ string.s: string.c.s
 
 # target to generate assembly for a file
 string.c.s:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/string.c.s
 .PHONY : string.c.s
 
 uart.o: uart.c.o
@@ -240,7 +240,7 @@ uart.o: uart.c.o
 
 # target to build an object file
 uart.c.o:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.o
 .PHONY : uart.c.o
 
 uart.i: uart.c.i
@@ -249,7 +249,7 @@ uart.i: uart.c.i
 
 # target to preprocess a source file
 uart.c.i:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.i
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.i
 .PHONY : uart.c.i
 
 uart.s: uart.c.s
@@ -258,7 +258,7 @@ uart.s: uart.c.s
 
 # target to generate assembly for a file
 uart.c.s:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.s
+	cd /home/anoxiacxy/Documents/acmOS/build && $(MAKE) $(MAKESILENT) -f kernel/common/CMakeFiles/acmOS_spr21-common.dir/build.make kernel/common/CMakeFiles/acmOS_spr21-common.dir/uart.c.s
 .PHONY : uart.c.s
 
 # Help Target
@@ -294,6 +294,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/anoxiacxy/Desktop/acmOS/kernel/boot/kernelvec.S" "/home/anoxiacxy/Desktop/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o"
+  "/home/anoxiacxy/Documents/acmOS/kernel/boot/kernelvec.S" "/home/anoxiacxy/Documents/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/kernelvec.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -14,7 +14,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../include"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/anoxiacxy/Desktop/acmOS/kernel/boot/start.c" "/home/anoxiacxy/Desktop/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o"
+  "/home/anoxiacxy/Documents/acmOS/kernel/boot/start.c" "/home/anoxiacxy/Documents/acmOS/build/kernel/boot/CMakeFiles/acmOS_spr21-boot.dir/start.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

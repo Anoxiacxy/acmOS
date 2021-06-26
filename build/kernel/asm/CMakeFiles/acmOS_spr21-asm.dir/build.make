@@ -62,10 +62,10 @@ RM = /bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anoxiacxy/Desktop/acmOS
+CMAKE_SOURCE_DIR = /home/anoxiacxy/Documents/acmOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anoxiacxy/Desktop/acmOS/build
+CMAKE_BINARY_DIR = /home/anoxiacxy/Documents/acmOS/build
 
 # Include any dependencies generated for this target.
 include kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/depend.make
@@ -78,8 +78,8 @@ include kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/flags.make
 
 kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o: kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/flags.make
 kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o: ../kernel/asm/boot.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Desktop/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o"
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/asm && riscv64-linux-gnu-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/acmOS_spr21-asm.dir/boot.S.o -c /home/anoxiacxy/Desktop/acmOS/kernel/asm/boot.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anoxiacxy/Documents/acmOS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o"
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/asm && riscv64-linux-gnu-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/acmOS_spr21-asm.dir/boot.S.o -c /home/anoxiacxy/Documents/acmOS/kernel/asm/boot.S
 
 acmOS_spr21-asm: kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/boot.S.o
 acmOS_spr21-asm: kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/build.make
@@ -92,10 +92,10 @@ kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/build: acmOS_spr21-asm
 .PHONY : kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/build
 
 kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/clean:
-	cd /home/anoxiacxy/Desktop/acmOS/build/kernel/asm && $(CMAKE_COMMAND) -P CMakeFiles/acmOS_spr21-asm.dir/cmake_clean.cmake
+	cd /home/anoxiacxy/Documents/acmOS/build/kernel/asm && $(CMAKE_COMMAND) -P CMakeFiles/acmOS_spr21-asm.dir/cmake_clean.cmake
 .PHONY : kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/clean
 
 kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/depend:
-	cd /home/anoxiacxy/Desktop/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Desktop/acmOS /home/anoxiacxy/Desktop/acmOS/kernel/asm /home/anoxiacxy/Desktop/acmOS/build /home/anoxiacxy/Desktop/acmOS/build/kernel/asm /home/anoxiacxy/Desktop/acmOS/build/kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anoxiacxy/Documents/acmOS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anoxiacxy/Documents/acmOS /home/anoxiacxy/Documents/acmOS/kernel/asm /home/anoxiacxy/Documents/acmOS/build /home/anoxiacxy/Documents/acmOS/build/kernel/asm /home/anoxiacxy/Documents/acmOS/build/kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kernel/asm/CMakeFiles/acmOS_spr21-asm.dir/depend
 
